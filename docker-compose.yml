@@ -1,0 +1,22 @@
+version: '3'
+services:
+  # client:
+  #   image: app
+  # server:
+  #   image: api
+  postgres:
+    image: postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - docker-react-go-postgres
+    volumes:
+      - postgres-data:/data/db
+    env_file:
+      - .env
+networks:
+  docker-react-go-postgres:
+    driver: bridge
+volumes:
+  postgres-data:
+    driver: local
