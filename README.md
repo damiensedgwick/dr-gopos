@@ -10,7 +10,7 @@ Just somewhere for me to experiment with the above technologies in a Dockerized 
 * Must be accessible on local host so that it can be visiting in the browser / accessed from the frontend
 can serve requests to the frontend.
 
-[ ] Dockerize React Frontend
+[✅] Dockerize React Frontend
 * This might not be necessary. If not, use pnpm. Undecided on create-react-app or roll your own.
 
 [ ] Connect the 3 Dockerized applications together

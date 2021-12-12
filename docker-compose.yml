@@ -1,7 +1,11 @@
 version: '3'
 services:
-  # client:
-  #   image: app
+  client:
+    image: docker-react-go-postgres-app
+    ports:
+      - "3000:3000"
+    networks:
+      - docker-react-go-postgres
   server:
     image: docker-react-go-postgres-api
     ports:
