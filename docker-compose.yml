@@ -6,6 +6,8 @@ services:
       - "3000:3000"
     networks:
       - docker-react-go-postgres
+    volumes:
+      - ./client:/app
   server:
     image: docker-react-go-postgres-api
     ports:
